@@ -3,7 +3,7 @@ import g, { Data } from 'glamorous'
 import { rhythm } from '../utils/typography';
 import Header from '../components/Header';
 
-require("prismjs/themes/prism-hopscotch.css")
+require("./prism-ghcolors.css");
 
 export default ({ children, data }) => (
   <g.Div
