@@ -6,7 +6,7 @@ import Link from 'gatsby-link';
 import { rhythm } from '../utils/typography';
 
 
-require("prismjs/themes/prism-solarizedlight.css");
+require("./prism-ghcolors.css");
 
 const linkStyle = css({ float: 'right', marginLeft: ".5rem" });
 
