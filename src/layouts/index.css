@@ -89,4 +89,7 @@ footer {
     .article-content {
         padding: .5rem; 
     }
+    .newsletter-subscription-box {
+        width: 90%;
+    }
 }
