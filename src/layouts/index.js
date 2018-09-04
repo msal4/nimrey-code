@@ -4,12 +4,12 @@ import g, { Data } from 'glamorous'
 import Link from 'gatsby-link';
 
 import { rhythm } from '../utils/typography';
+import './index.css';
 
-
-require("prismjs/themes/prism-solarizedlight.css");
+require("prismjs/themes/prism.css");
 
 const linkStyle = css({ float: 'right', marginLeft: ".5rem" });
-const headerStyle = ({
+const containerStyle = css({
   margin: `0 auto`,
   maxWidth: 1000,
   padding: rhythm(2),
@@ -17,7 +17,7 @@ const headerStyle = ({
 });
 
 export default ({ children, data }) => (
-  <div css={headerStyle}>
+  <div className={containerStyle + ' container'}>
     <Link to={`/`}>
       <g.H3
         marginBottom={rhythm(2)}
@@ -35,6 +35,9 @@ export default ({ children, data }) => (
       About
     </Link>
     {children()}
+    <footer id='footer'>
+
+    </footer>
   </div>
 );
 
