@@ -14,7 +14,7 @@ export default ({ data }) => {
         </div>
       </div>
       <TinyLetter className="newsletter-subscription-box" list="nimreycode">
-        <g.H3 className="label">Subscribe to my newsletter!</g.H3>
+        <g.P className="label">Subscribe to my newsletter!</g.P>
         <input className="email-field newsletter-subscription-box-item" type='email' placeholder='Your email address' />
         <input className="subscribe-button newsletter-subscription-box-item" type='submit' value='subscribe' />
       </TinyLetter>
@@ -38,5 +38,4 @@ const styles = {
   articleStyle: {
     boxShadow: '0px 0px 2px #BBB',
   },
-
 };

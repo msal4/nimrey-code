@@ -5,12 +5,13 @@ img, video {
 
 html{ 
     height:100%;
- }
+}
+
 body {
      min-height:100%;
       padding:0; margin:0;
        position:relative;
-     }
+}
 
 body::after {
   content: '';
@@ -19,7 +20,7 @@ body::after {
 }
 
 footer {
-    background:#a29bfe;
+    background:#2E333B;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -48,7 +49,9 @@ footer {
 }
 
 .newsletter-subscription-box .label {
-    color: #a29bfe;
+    font-size: 1.5rem;
+    background: #2E333B;
+    color: #e2d4fd;
     padding: 7px;
 }
 
