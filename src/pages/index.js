@@ -26,10 +26,6 @@ const Post = ({ node }) => (
 
 export default ({ data }) => (
   <div>
-    <g.H1 display={'inline-block'}>
-      Latest Articles
-    </g.H1>
-    <g.H4 color='#BBB'>{data.allMarkdownRemark.totalCount} Posts</g.H4>
     <Container>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Post key={node.id} node={node} />

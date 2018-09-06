@@ -8,7 +8,7 @@ import './index.css';
 
 require("prismjs/themes/prism.css");
 
-const linkStyle = css({ float: 'right', marginLeft: ".5rem" });
+const linkStyle = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
 const containerStyle = css({
   margin: `0 auto`,
   maxWidth: 1000,
@@ -27,7 +27,6 @@ export default ({ children, data }) => (
         {data.site.siteMetadata.title}
       </g.H3>
     </Link>
-
     <Link className={linkStyle} to={`/contact/`}>
       Contact
     </Link>

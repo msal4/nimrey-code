@@ -9,17 +9,16 @@ const container = css({
 const msalImg = css({
   margin: '3rem auto',
   borderRadius: '50%',
-  width: 'calc(20vw + 60px)',
-  height: 'calc(20vw + 60px)',
-  boxShadow: '16px 5px 2px 1px rgba(0, 0, 255, .2)',
-  MozBoxShadow: '16px 5px 2px 1px rgba(0, 0, 255, .2)',
-  WebKitBoxShadow: '16px 5px 2px 1px rgba(0, 0, 255, .2)',
-  transition: 'all 1s',
-  overflow: 'hidden',
+  width: '400px',
+  height: '400px',
+  border: '5px solid rgba(0, 0, 0, .7)',
+  boxShadow: '10px 2px 0px 1px rgba(0, 0, 255, .2)',
+  MozBoxShadow: '5px 5px 0px 1px rgba(0, 0, 255, .2)',
+  WebKitBoxShadow: '5px 5px 0px 1px rgba(0, 0, 255, .2)',
   '&:hover': {
-    boxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
-    MozBoxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
-    WebKitBoxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
+    // boxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
+    // MozBoxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
+    // WebKitBoxShadow: '0px 0px 10px 5px rgba(0, 0, 255, .2)',
   }
 });
 
