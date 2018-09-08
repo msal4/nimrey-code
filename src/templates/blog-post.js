@@ -1,23 +1,30 @@
 import React from "react";
-import g from 'glamorous';
-import { TinyLetter } from 'react-tinyletter';
+import { css } from 'glamor';
+import SubscriptionBox from '../components/subsciption-box';
+
+const articleContainerRule = css({
+  boxShadow: '0px 0px 2px #BBB',
+});
+const articleContentRule = css({
+  padding: '.5rem 2rem .5rem 2rem',
+  '@media screen and (max-width: 800px)': {
+    padding: '.5rem',
+  },
+});
+
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div>
-      <div className='article' css={styles.articleStyle}>
+      <div {...articleContainerRule}>
         <img src={post.frontmatter.cover_image} />
-        <div className='article-content'>
+        <div {...articleContentRule}>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </div>
-      <TinyLetter className="newsletter-subscription-box" list="nimreycode">
-        <g.P className="label">Subscribe to my newsletter!</g.P>
-        <input className="email-field newsletter-subscription-box-item" type='email' placeholder='Your email address' />
-        <input className="subscribe-button newsletter-subscription-box-item" type='submit' value='subscribe' />
-      </TinyLetter>
+      <SubscriptionBox />
     </div>
   );
 };
@@ -33,9 +40,3 @@ export const query = graphql`
     }
   }
 `;
-
-const styles = {
-  articleStyle: {
-    boxShadow: '0px 0px 2px #BBB',
-  },
-};

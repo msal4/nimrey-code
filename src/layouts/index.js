@@ -1,47 +1,43 @@
 import React from 'react'
 import { css } from 'glamor';
-import g, { Data } from 'glamorous'
-import Link from 'gatsby-link';
 
+import Header from '../components/header';
 import { rhythm } from '../utils/typography';
 import './index.css';
 
 require("prismjs/themes/prism.css");
 
-const linkStyle = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
-const containerStyle = css({
+const containerRule = css({
   margin: `0 auto`,
   maxWidth: 1000,
   padding: rhythm(2),
   paddingTop: rhythm(1.5),
+  '@media screen and (max-width: 800px)': {
+    padding: '10px 5px',
+  },
+});
+
+const footerRule = css({
+  background: '#2E333B',
+  position: 'absolute',
+  left: 0,
+  bottom: 0,
+  width: '100%',
+  height: '50px',
 });
 
 export default ({ children, data }) => (
-  <div className={containerStyle + ' container'}>
-    <Link to={`/`}>
-      <g.H3
-        marginBottom={rhythm(2)}
-        display={`inline-block`}
-        fontStyle={`normal`}
-      >
-        {data.site.siteMetadata.title}
-      </g.H3>
-    </Link>
-    <Link className={linkStyle} to={`/contact/`}>
-      Contact
-    </Link>
-    <Link className={linkStyle} to={`/about/`}>
-      About
-    </Link>
+  <div {...containerRule}>
+    <Header data={data} />
     {children()}
-    <footer id='footer'>
+    <footer {...footerRule}>
 
     </footer>
   </div>
 );
 
 export const query = graphql`
-  query LayoutQuery {
+  query HeaderQuery {
     site {
       siteMetadata {
         title
