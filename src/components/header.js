@@ -19,6 +19,7 @@ const Header = ({ data }) => (
     {/* <Link className={linkStyle} to={`/contact/`}>
       Contact
     </Link> */}
+    <a href='https://google.com'>this is a test link</a>
     <Link className={linkStyle} to={`/about/`}>
       About
     </Link>
