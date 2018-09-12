@@ -1,7 +1,9 @@
 import g, { Data } from 'glamorous'
 import Link from 'gatsby-link';
-import { rhythm } from '../utils/typography';
 import { css } from 'glamor';
+
+import { rhythm } from '../utils/typography';
+import SocialLinks from '../components/social-links';
 
 const linkStyle = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
 
@@ -16,9 +18,7 @@ const Header = ({ data }) => (
         {data.site.siteMetadata.title}
       </g.H3>
     </Link>
-    {/* <Link className={linkStyle} to={`/contact/`}>
-      Contact
-    </Link> */}
+    <SocialLinks />
     <Link className={linkStyle} to={`/about/`}>
       About
     </Link>

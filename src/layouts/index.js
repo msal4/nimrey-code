@@ -3,6 +3,7 @@ import { css } from 'glamor';
 
 import Header from '../components/header';
 import { rhythm } from '../utils/typography';
+import SocialLinks from '../components/social-links';
 import './index.css';
 
 require("prismjs/themes/prism.css");
@@ -31,17 +32,17 @@ export default ({ children, data }) => (
     <Header data={data} />
     {children()}
     <footer {...footerRule}>
-
+      <SocialLinks />
     </footer>
   </div>
 );
 
 export const query = graphql`
   query HeaderQuery {
-    site {
-      siteMetadata {
-        title
-      }
+      site {
+    siteMetadata {
+      title
+    }
     }
   }
 `;
