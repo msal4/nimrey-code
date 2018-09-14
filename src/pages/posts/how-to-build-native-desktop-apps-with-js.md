@@ -141,4 +141,4 @@ If you have any questions or suggestions feel free to comment or reach me on [Tw
 
 Check out the previous article
 
-[How to build a news app with React Native](https://dev.to/msal4/how-to-build-a-news-app-with-react-native-4ifd)
+[How to build a news app with React Native](/how-to-build-a-news-app-with-react-native)

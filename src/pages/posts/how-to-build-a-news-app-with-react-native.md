@@ -244,8 +244,6 @@ Now if we run the app:
 ![screenshot](https://thepracticaldev.s3.amazonaws.com/i/fa1ztf421utl1cal60h3.jpg)
 *and we can refresh the app*
 ![screenshot](https://thepracticaldev.s3.amazonaws.com/i/ghu5if5yehnln21u1hyn.jpg)
-There you go! The source code for the app is available on GitHub [HERE](https://github.com/msal4/royal_news) you can improve upon it and make a pull request😄.
+There you go! The source code for the app is available on GitHub [HERE](https://github.com/msal4/royal_news) you can improve upon it and make a pull request.
 
-I hope you enjoyed my article! If you have any questions at all, feel free to comment or reach me on [twitter](https://twitter.com/4msal4) and I will definitely help :)
-
-Also don't forget to share the article😄👇.
+I hope you enjoyed my article! If you have any questions at all, feel free to comment or reach me on [twitter](https://twitter.com/4msal4) and I will definitely help.
