@@ -34,7 +34,6 @@ export default ({ data }) => (
   </div>
 )
 export const query = graphql`
-
   query IndexQuery {
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       totalCount
