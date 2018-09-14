@@ -3,8 +3,6 @@ module.exports = {
     title: `NimreyCode`,
   },
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-transformer-remark`,
