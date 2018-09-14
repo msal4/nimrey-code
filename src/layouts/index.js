@@ -19,12 +19,12 @@ const containerRule = css({
 });
 
 const footerRule = css({
-  background: '#2E333B',
   position: 'absolute',
   left: 0,
   bottom: 0,
   width: '100%',
   height: '50px',
+  marginBottom: '10px',
 });
 
 export default ({ children, data }) => (

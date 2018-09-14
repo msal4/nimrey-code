@@ -33,8 +33,9 @@ export default ({ data }) => (
     <div {...container}>
       <img {...msalImg} src='https://avatars1.githubusercontent.com/u/30052233?s=460&v=4' />
       <p {...aboutMe}>
-        Hey! I'm Mohammed Salman, a Full Stack Web Developer based in Baghdad
-          and this is a blog where I post articles and tutorials about programming.
+        Hey! I'm Mohammed Salman, a Full Stack Web Developer based in Baghdad,
+          and this is my blog where I like to post articles and tutorials
+          about programming to help other developers.
       </p>
     </div>
   </div>

@@ -5,10 +5,16 @@ import { css } from 'glamor';
 import { rhythm } from '../utils/typography';
 import SocialLinks from '../components/social-links';
 
-const linkStyle = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
-
+const linkRule = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
+const contaierRule = css({
+  '& .social-links': {
+    '@media screen and (max-width: 800px)': {
+      display: 'none',
+    },
+  },
+});
 const Header = ({ data }) => (
-  <span>
+  <div {...contaierRule}>
     <Link to={`/`}>
       <g.H3
         marginBottom={rhythm(2)}
@@ -19,10 +25,10 @@ const Header = ({ data }) => (
       </g.H3>
     </Link>
     <SocialLinks />
-    <Link className={linkStyle} to={`/about/`}>
+    <Link {...linkRule} to={`/about/`}>
       About
     </Link>
-  </span>
+  </div>
 );
 
 export default Header;
