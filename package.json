@@ -12,7 +12,9 @@
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "react-helmet": "^5.2.0",
-    "react-social-icons": "^3.0.0"
+    "react-social-icons": "^3.0.0",
+    "update": "^0.7.4",
+    "url-parse": "^1.4.3"
   },
   "keywords": [
     "gatsby"
