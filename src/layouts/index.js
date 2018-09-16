@@ -28,6 +28,14 @@ const footerRule = css({
   marginBottom: '10px',
 });
 
+const announcementRule = css({
+  textAlign: 'center',
+  // backgroundColor: '#95a5a6',
+  // color: 'white',
+  padding: '5px',
+  borderRadius: '5px',
+  border: '2px solid #d35400'
+});
 export default ({ children, data }) => (
   <div {...containerRule}>
     <Helmet
@@ -67,6 +75,7 @@ export default ({ children, data }) => (
       <html lang="en" />
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </Helmet>
+    <p {...announcementRule}>The site is under development!😅</p>
     <Header data={data} />
     {children()}
     <footer {...footerRule}>
