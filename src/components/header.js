@@ -24,10 +24,10 @@ const Header = ({ data }) => (
         {data.site.siteMetadata.title}
       </g.H3>
     </Link>
-    <SocialLinks />
     <Link {...linkRule} to={`/about/`}>
       About
     </Link>
+    <SocialLinks />
   </div>
 );
 

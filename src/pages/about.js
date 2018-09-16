@@ -27,9 +27,8 @@ const aboutMe = css({
   color: 'white',
 });
 
-export default ({ data }) => (
+export default () => (
   <div>
-    <h1>About {data.site.siteMetadata.title}</h1>
     <div {...container}>
       <img {...msalImg} src='https://avatars1.githubusercontent.com/u/30052233?s=460&v=4' />
       <p {...aboutMe}>
@@ -40,13 +39,3 @@ export default ({ data }) => (
     </div>
   </div>
 )
-
-export const query = graphql`
-  query AboutQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  } 
-`
