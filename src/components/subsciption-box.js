@@ -7,7 +7,8 @@ const subBoxRule = css({
   width: '50%',
   padding: '1rem',
   textAlign: 'center',
-  boxShadow: '1px 1px 3px #BBB',
+  backgroundColor: '#fafafb',
+  boxShadow: '4px 4px rgba(0, 0, 255, .2)',
   '@media screen and (max-width: 800px)': {
     width: '90%',
   },
@@ -30,16 +31,16 @@ const subBoxLabel = css({
   padding: '7px',
 });
 const subBoxEmail = css({
-  backgroundColor: '#f1f7fa',
+  backgroundColor: '#dfe4ea',
   color: '#9781c0',
   width: '100%',
   margin: '1rem 0',
   borderRadius: '10px',
   '&:focus': {
     background: 'white',
-    WebKitBoxShadow: '0 0 5px #a29bfe',
-    MozBoxShadow: '0 0 5px #a29bfe',
-    boxShadow: '0 0 5px #a29bfe',
+    WebKitBoxShadow: '4px 4px rgba(0, 0, 255, .2)',
+    MozBoxShadow: '4px 4px rgba(0, 0, 255, .2)',
+    boxShadow: '4px 4px rgba(0, 0, 255, .2)',
     borderRadius: '0',
   },
   '&::placeholder': {

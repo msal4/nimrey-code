@@ -3,7 +3,8 @@ import { css } from 'glamor';
 import SubscriptionBox from '../components/subsciption-box';
 
 const articleContainerRule = css({
-  boxShadow: '0px 0px 2px #BBB',
+  backgroundColor: '#fafafb',
+  boxShadow: '4px 4px rgba(0, 0, 255, .2)',
 });
 const articleContentRule = css({
   padding: '.5rem 2rem .5rem 2rem',

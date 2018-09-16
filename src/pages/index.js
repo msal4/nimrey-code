@@ -66,7 +66,7 @@ const styles = {
     alignItems: 'center',
     margin: '0 auto 12px auto',
     '&:last-child': { marginBottom: 0 },
-    boxShadow: '1px 1px 3px #BBB'
+    boxShadow: '4px 4px #dfe4ea'
   },
   postCoverStyle: {
     backgroundSize: 'cover',
