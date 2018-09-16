@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from 'glamor';
+import Helmet from 'react-helmet';
 
 import Header from '../components/header';
 import { rhythm } from '../utils/typography';
@@ -29,6 +30,43 @@ const footerRule = css({
 
 export default ({ children, data }) => (
   <div {...containerRule}>
+    <Helmet
+      title="NimreyCode"
+      meta={[
+        {
+          name: "description",
+          content: "A blog in which I like to post articles and tutorials about programming to help other developers"
+        },
+        {
+          name: "keywords",
+          content:
+            "rust, code, programming, backend, tech, python, frontend, developer, development, article, how to, build, javascript, html, css, design, frontend programming, start programming, coding, react, react native, mobile, application, app"
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image"
+        },
+        {
+          name: "twitter:site",
+          content: "@4msal4"
+        },
+        {
+          name: "twitter:creator",
+          content: "@4msal4"
+        },
+        {
+          name: "twitter:title",
+          content: "NimreyCode"
+        },
+        {
+          name: "twitter:description",
+          content: "A blog where I post tutorials about programming"
+        },
+      ]}
+    >
+      <html lang="en" />
+      <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </Helmet>
     <Header data={data} />
     {children()}
     <footer {...footerRule}>
