@@ -12,17 +12,34 @@ const socialLinksRule = css({
   },
 });
 
+const urls: string[] = [
+  'https://github.com/msal4',
+  'https://twitter.com/4msal4',
+  'https://medium.com/@msal',
+  'https://linkedin.com/in/4msal',
+  'https://facebook.com/4msal4',
+  'mailto:msal4@outlook.com',
+];
 const iconColor = '#a29bfe';
 const iconStyle = { width: '40', height: '40' };
+
+const createIcons = (props, urls) => {
+  let items = [];
+  for (let i = 0; i < urls.length; i++)
+    items.push(<SocialIcon key={i} color={props.color} style={props.style} url={urls[i]} />);
+  return items;
+};
+
 const SocialLinks = () => (
   <div style={{ textAlign: 'center' }}>
     <div className='social-links' {...socialLinksRule}>
-      <SocialIcon color={iconColor} style={iconStyle} url="https://github.com/msal4" />
-      <SocialIcon color={iconColor} style={iconStyle} url="https://twitter.com/4msal4" />
-      <SocialIcon color={iconColor} style={iconStyle} url="https://medium.com/@msal" />
-      <SocialIcon color={iconColor} style={iconStyle} url="https://linkedin.com/in/4msal" />
-      <SocialIcon color={iconColor} style={iconStyle} url="https://facebook.com/4msal4" />
-      <SocialIcon color={iconColor} style={iconStyle} url="mailto:msal4@outlook.com" />
+      {/* <SocialIcon color={iconColor} style={iconStyle} url= />
+      <SocialIcon color={iconColor} style={iconStyle} url="" />
+      <SocialIcon color={iconColor} style={iconStyle} url="" />
+      <SocialIcon color={iconColor} style={iconStyle} url="" />
+      <SocialIcon color={iconColor} style={iconStyle} url="" />
+      <SocialIcon color={iconColor} style={iconStyle} url="" /> */}
+      {createIcons({ color: iconColor, style: iconStyle, }, urls)}
     </div>
   </div>
 );

@@ -6,13 +6,7 @@ import { rhythm } from '../utils/typography';
 import SocialLinks from '../components/social-links';
 
 const linkRule = css({ float: 'right', marginLeft: ".5rem", color: '#a29bfe', textDecoration: 'none', });
-// const contaierRule = css({
-//   '& .social-links': {
-//     '@media screen and (max-width: 800px)': {
-//       display: 'none',
-//     },
-//   },
-// });
+
 const Header = ({ data }) => (
   <div /*{ ...contaierRule} */ >
     <Link to={`/`}>
