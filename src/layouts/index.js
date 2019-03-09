@@ -28,14 +28,14 @@ const footerRule = css({
   marginBottom: '10px',
 });
 
-const announcementRule = css({
-  textAlign: 'center',
-  backgroundColor: '#ecf0f1',
-  // color: 'white',
-  padding: '5px',
-  borderRadius: '5px',
-  boxShadow: '4px 4px rgba(0, 0, 255, .2)'
-});
+// const announcementRule = css({
+//   textAlign: 'center',
+//   backgroundColor: '#ecf0f1',
+//   // color: 'white',
+//   padding: '5px',
+//   borderRadius: '5px',
+//   boxShadow: '4px 4px rgba(0, 0, 255, .2)'
+// });
 export default ({ children, data }) => (
   <div {...containerRule}>
     <Helmet
@@ -75,7 +75,7 @@ export default ({ children, data }) => (
       <html lang="en" />
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </Helmet>
-    <p {...announcementRule}>The site is under development🛠</p>
+//     <p {...announcementRule}>The site is under development🛠</p>
     <Header data={data} />
     {children()}
     <footer {...footerRule}>
