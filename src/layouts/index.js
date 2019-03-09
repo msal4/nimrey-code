@@ -75,7 +75,6 @@ export default ({ children, data }) => (
       <html lang="en" />
       <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </Helmet>
-//     <p {...announcementRule}>The site is under development🛠</p>
     <Header data={data} />
     {children()}
     <footer {...footerRule}>
