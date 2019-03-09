@@ -1,5 +1,6 @@
 ---
 title: How to build native desktop apps with JavaScript
+date: "2018-05-05"
 description: any application that can be written in JavaScript, will eventually be written in JavaScript
 published: true
 tags: javascript, react, webdev, node
