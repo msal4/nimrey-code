@@ -1,3 +1,2 @@
 # NimreyCode Blog
-Built using GatsbyJS
-
+My personal blog built using GatsbyJS and ReactJS
