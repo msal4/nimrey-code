@@ -56,7 +56,7 @@ const subBoxButton = css({
 });
 
 const SubscriptionBox = () => (
-  <TinyLetter {...subBoxRule}>
+  <TinyLetter {...subBoxRule} list='nimreycode'>
     <p {...subBoxLabel}>Subscribe to my newsletter!</p>
     <input {...subBoxItem} {...subBoxEmail} type='email' placeholder='Your email address' />
     <input {...subBoxItem} {...subBoxButton} type='submit' value='subscribe' />
